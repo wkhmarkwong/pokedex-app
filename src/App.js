@@ -30,11 +30,12 @@ function App() {
 
   return (
     <div className="app-contaner">
-      <PokemonList pokemon={pokemon} />
+      <h1>Pokedex App</h1>
       <Pagination
         gotoNextPage={nextPageUrl ? gotoNextPage : null}
         gotoPrevPage={prevPageUrl ? gotoPrevPage : null}
       />
+      <PokemonList pokemon={pokemon} />
     </div>
   );
 }
